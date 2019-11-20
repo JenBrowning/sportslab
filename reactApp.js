@@ -71,8 +71,8 @@ class Game extends React.Component {
            }
         }
 
-        this.shotSound = newAudio('./assets/audio/smb.fireball.wav')
-        this.scoreSound = newAudio('./assets/audio/smb_1-up.wav')
+        this.shotSound = newAudio('./assets/audio/swish.wav')
+        this.scoreSound = newAudio('./assets/audio/cheering.wav')
 
         shoot = (team) => {
             const teamStatsKey = `${team} TeamStats`
@@ -149,22 +149,22 @@ class Game extends React.Component {
 function App(props) {
     const raccoons = {
         name: 'Russiaville Racoons',
-        logoSrc: './assets/images/raccoon.png'
+        logoSrc: './assets/images/Lebron.png'
     }
 
     const squirrels = {
         name: 'Sheridan Squirrels',
-        logoSrc: './assets/images/squirrel.png'
+        logoSrc: './assets/images/MichaelJordan.png'
     }
 
     const bunnies = {
         name: 'Burlington Bunnies',
-        logoSrc: './assets/images/bunny.png'
+        logoSrc: './assets/images/James.png'
     }
 
     const hounds = {
         name: 'Hammond Hounds',
-        logoSrc: './assets/images/hound.png'
+        logoSrc: './assets/images/Deron.png'
     }
     return (
       <div>
@@ -182,7 +182,6 @@ function App(props) {
     )
   }
   
-  //Render the application
   ReactDOM.render(
     <App />,
     document.getElementById('root')
